@@ -1,0 +1,13 @@
+@use '../../app/styles/mixins' as mixin;
+@use '../../app/styles/variables.scss' as var;
+
+.card {
+    width: 120px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: var.$secondary-black
+}

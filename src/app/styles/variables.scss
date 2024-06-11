@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Montserrat:wght@400;500;600&display=swap");
+
+$fontFamily: ("Open Sans", sans-serif);
+
+//=Primary colors=======================================================================================================================================================
+$primary-footer: #f5f1f6;
+$primary-primary: #ebf2f1;
+$primary-hover: #c0a4b7;
+$primary-fon:  #e6f9f0;
+$primary-fon-card: #f3ceb9;
+$primary-border: #7de9ed;
+$primary-container: rgba(223, 246, 244, 0.2);
+
+
+//=Secondary colors=======================================================================================================================================================
+$secondary-black: #030110;
+$secondary-white: #fcfcfc;
+$secondary-text: #363636;
+$secondary-gray: #9a9a9a;
+$secondary-hover: #ededed;
+$secondary-error: #f94949;
+$secondary-positive: #1ba161;
+//=Fonts=======================================================================================================================================================
+$counter-font: (
+  "font-family": (
+    "Open Sans",
+    sans-serif,
+  ),
+  "font-size": 48px,
+  "letter-spacing": 0.01em,
+  "font-weight": 600,
+  "line-height": 150%,
+);
+$h1-font: (
+  "font-family": (
+    "Open Sans",
+    sans-serif,
+  ),
+  "font-size": 40px,
+  "letter-spacing": 0.01em,
+  "font-weight": 600,
+  "line-height": 150%,
+);
+
+$h2-font: (
+  "font-family": (
+    "Montserrat",
+    sans-serif,
+  ),
+  "font-size": 24px,
+  "letter-spacing": 0.01em,
+  "font-weight": 500,
+  "line-height": 150%,
+);
+
+$h3-font: (
+  "font-family": (
+    "Open Sans",
+    sans-serif,
+  ),
+  "font-size": 18px,
+  "letter-spacing": 0.01em,
+  "font-weight": 600,
+  "line-height": 150%,
+);
+
+$button: $h3-font;
+$menu: $h3-font;
+
+$text-20-font: (
+  "font-family": (
+    "Montserrat",
+    sans-serif,
+  ),
+  "font-size": 20px,
+  "letter-spacing": 0.01em,
+  "font-weight": 400,
+  "line-height": 150%,
+);
+
+$text-16-font: (
+  "font-family": (
+    "Montserrat",
+    sans-serif,
+  ),
+  "font-size": 16px,
+  "letter-spacing": 0.01em,
+  "font-weight": 400,
+  "line-height": 150%,
+);
+
+$breakpoints: (
+  "tn": 320px,
+  "sm": 420px,
+  "md": 768px,
+  "lg": 1280px,
+  "xl": 1366px,
+  "xxl": 1440px,
+  "xxxl": 1920px,
+);
+
+//===Other=====================================================================================================================================================
+$transition-duration-base: 0.3s;
+$transition-timing-base: ease;
