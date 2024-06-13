@@ -1,4 +1,4 @@
-import styles from './socialicons.module.scss';
+import styles from './SocialIcons.module.scss';
 
 export default function SocialIcons ({item}) {
   const {image, name, url, text} = item;
