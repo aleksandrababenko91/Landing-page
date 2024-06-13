@@ -9,19 +9,24 @@ import Image from 'next/image';
 export default function Hero () {
   return (
     <section className={styles.container}>
-      <h3>Venture capital investors for the next generation.
-          We’re here to do things differently.
-      </h3>
-      <Image  src={card} width={1000} height={300}/> 
-      <Marquee speed={60} gradient={false}>
-      <div className={styles.logoContainer}>
-        {items.map((item) => (
-          <div key={uuidv4()}>
-              <TickerCard item={item}/>
-          </div>
-        ))}
+      <div className={styles.header}>
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+      Lorem Ipsum has been the industry's standard 
       </div>
-    </Marquee>
+      <div className={styles.posterWrapper}>
+        <Image  alt="poster" className={styles.poster} src={card} fillsizes="100%"/> 
+      </div>
+
+        <Marquee  className={styles.marquee} speed={60} gradient={false}>
+          <div className={styles.logoContainer}>
+            {items.map((item) => (
+              <div key={uuidv4()}>
+                  <TickerCard item={item}/>
+              </div>
+            ))}
+          </div>
+        </Marquee>
+
     </section>
   )
 }

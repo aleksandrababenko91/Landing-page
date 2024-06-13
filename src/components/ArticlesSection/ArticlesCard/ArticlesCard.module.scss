@@ -10,8 +10,16 @@
   flex-direction: column;
   border-radius: 8px;
   height: fit-content;
-  width: 280px;
+  min-width: 280px;
+  max-width: 668px;
+  @include mixin.media-q("md") {
+    width: 668px;
+  }
+
   @include mixin.media-q("xl") {
+  width: 600px;
+}
+  @include mixin.media-q("xxxl") {
   width: 600px;
   }
 }
@@ -26,7 +34,17 @@
   padding: 24px 16px;
   width: 280px;
   height: fit-content;
+  @include mixin.media-q("md") {
+    width: 668px;
+
+  }
   @include mixin.media-q("xl") {
+  gap: 36px;
+  padding: 52px 24px;
+  width: 600px;
+  height: fit-content;
+}
+  @include mixin.media-q("xxxl") {
   gap: 36px;
   padding: 52px 24px;
   width: 600px;
@@ -35,19 +53,27 @@
 }
 .headerWrapper {
   @include mixin.apply-font-styles(var.$h3-font);
-
   color: var.$secondary-black;
   @include mixin.media-q("xl") {
-
   @include mixin.apply-font-styles(var.$h1-font);
 }
+
 }
 .img {
   position: relative;
   height: fit-content;
   width: 280px;
   height: 242px;
+  @include mixin.media-q("md") {
+    width: 668px;
+    height: 380px;
+
+  }
   @include mixin.media-q("xl") {
+    height: 342px;
+    width: 600px;
+  }
+  @include mixin.media-q("xxxl") {
     height: 342px;
     width: 600px;
   }

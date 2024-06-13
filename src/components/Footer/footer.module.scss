@@ -1,0 +1,60 @@
+@use "../../app/styles/variables" as var;
+@use "../../app/styles/mixins" as mx;
+
+
+
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 15px;
+  border-top: 3px solid #000;
+  padding: 16px 64px;
+  height: 200px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  background: #fff;
+  color:#000;
+  @include mx.apply-font-styles(var.$h3-font);
+  color: var.$secondary-black;
+  min-width: 320px;
+  max-width: 768px;
+  @include mx.media-q("md") {
+    min-width: 768px;
+  max-width: 1366px;
+}
+  @include mx.media-q("xl") {
+
+  min-width: 1366px;
+  max-width: 1920px;
+}
+  @include mx.media-q("xxxl") {
+  min-width: 1920px;
+  max-width: 100%;
+}
+
+
+}
+
+
+
+.icon {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  @include mx.media-q("xl") {
+    flex-direction: row;
+    gap: 100px;
+
+
+  }
+  @include mx.media-q("xxxl") {
+    flex-direction: row;
+    gap: 200px;
+
+
+  }
+
+}

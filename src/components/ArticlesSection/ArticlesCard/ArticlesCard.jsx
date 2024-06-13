@@ -11,6 +11,7 @@ export default function ArticlesCard({item}) {
         fill
           sizes="100%"
         src={img}
+        alt="article image"
        />
       <span className={styles.title}>{title}</span>
       </div>
