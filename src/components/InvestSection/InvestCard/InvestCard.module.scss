@@ -225,7 +225,7 @@
 .svgWrapper {
   position: relative;
   z-index: 1;
-  right: 90px;
+  right: 50px;
   @include mixins.media-q("md") { 
     position: relative;
   z-index: 0;

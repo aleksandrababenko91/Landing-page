@@ -13,7 +13,7 @@ export const items = [
       text_1: "It is a long established fact that a reader will be distracted by the readable content",
       text_2: "It is a long established fact that a reader will be distracted by the readable content",
       text_3: "It is a long established fact that a reader will be distracted by the readable content",
-      icon: "/images/photo6.jpg",
+      icon: "/images/photo2.jpg",
       image: "/icons/coconaut.svg",
       baloon: "/icons/baloon.svg",
       },
