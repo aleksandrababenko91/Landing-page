@@ -64,6 +64,51 @@ $h3-font: (
   "line-height": 150%,
 );
 
+$h4-font: (
+  "font-family": (
+    "Montserrat",
+    sans-serif,
+    ),
+    "font-weight": 700,
+    "font-size": 24px,
+    "line-height": 1.5,
+    "letter-spacing": 0.01em,
+    );
+
+
+$h5-font: (
+  "font-family": (
+    "Open Sans",
+    sans-serif,
+  ),
+  "font-size": 32px,
+  "letter-spacing": 0.01em,
+  "font-weight": 600,
+  "line-height": 150%,
+);
+
+$h6-font: (
+  "font-family": (
+    "Montserrat",
+    sans-serif,
+    ),
+    "font-weight": 600,
+    "font-size": 20px,
+    "line-height": 1.5,
+    "letter-spacing": 0.01em,
+);
+
+$h7-font: (
+  "font-family": (
+    "Open Sans",
+    sans-serif,
+  ),
+  "font-size": 26px,
+  "letter-spacing": 0.01em,
+  "font-weight": 700,
+  "line-height": 150%,
+);
+
 $button: $h3-font;
 $menu: $h3-font;
 
@@ -102,3 +147,4 @@ $breakpoints: (
 //===Other=====================================================================================================================================================
 $transition-duration-base: 0.3s;
 $transition-timing-base: ease;
+$border: 1px solid #ff62ce;
