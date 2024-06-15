@@ -11,7 +11,7 @@
   min-width: 280px;
   max-width: 768px;
   height: fit-content;
-  background: var.$primary-fon-card;
+  background: var.$primary-container;
 
   @include mixins.media-q("md") {
     gap: 32px;
@@ -31,7 +31,7 @@
   min-width: 1366px;
   max-width: 1920px;
   height: fit-content;
-  background: #0f031f;
+  background: var.$primary-container;
 }
 
 @include mixins.media-q("xxxl") { 
@@ -41,7 +41,7 @@
   min-width: 1920px;
   max-width: 100%;
   height: fit-content;
-  background: var.$primary-fon;
+  background: var.$primary-container;
 
 }
 }

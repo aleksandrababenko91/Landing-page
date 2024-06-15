@@ -4,10 +4,11 @@ import styles from '../InvestCard/InvestCard.module.scss';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import React, { useRef, useEffect, useState } from 'react';
 import { useMediaQuery } from 'react-responsive';
-// import { Icon } from '../Icon/Icon';
+import { Icon } from '../../Icon/Icon';
 
-export default function JoinProjectCard({ item = {}, i, progress, range, targetScale }) {
-  const { text_1, text_2, text_3, title, icon, image } = item;
+
+export default function InvestCard({ item = {}, i, progress, range, targetScale }) {
+  const { text_1, text_2, text_3, title, icon, image, baloon } = item;
   const container = useRef(null);
   const { scrollYProgress } = useScroll({
     target: container,
@@ -30,8 +31,6 @@ export default function JoinProjectCard({ item = {}, i, progress, range, targetS
         <motion.div style={{ scale: isClient ? (isMobile ? 1 : svgScale) : 1 }} className={styles.svgWrapper}>
           <img
             className={styles.iconNumber}
-            height={250}
-            width={100}
             src={icon}>
           </img>
         </motion.div>
@@ -45,19 +44,28 @@ export default function JoinProjectCard({ item = {}, i, progress, range, targetS
           </div>
           <div className={styles.text}>
             <div >
-              {/* <Icon className={styles.checkboxWrapper} name="check" width={24} height={24} /> */}
+            <img
+              className={styles.iconTitle}
+              src={baloon}>
+            </img>
             </div>
             {(text_1)}
           </div>
           <div className={styles.text}>
             <div >
-              {/* <Icon className={styles.checkboxWrapper} name="check" width={24} height={24} /> */}
+            <img
+              className={styles.iconTitle}
+              src={baloon}>
+            </img>
             </div>
             {(text_2)}
           </div>
           <div className={styles.text}>
             <div >
-              {/* <Icon className={styles.checkboxWrapper} name="check" width={24} height={24} /> */}
+            <img
+              className={styles.iconTitle}
+              src={baloon}>
+            </img>
             </div>
             {(text_3)}
           </div>
